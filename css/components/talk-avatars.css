@@ -1,0 +1,14 @@
+.talk__avatars-box {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  flex-wrap: wrap;
+  margin-right: 15px;
+}
+
+.talk__avatars {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  padding: 2px;
+}

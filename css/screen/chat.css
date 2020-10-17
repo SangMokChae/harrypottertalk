@@ -1,0 +1,183 @@
+#chat-screen {
+  height: 220vh;
+}
+
+#chat-screen .status-bar,
+#chat-screen .chat-header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.main-chat {
+  margin-top: 100px;
+}
+
+#chat__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timeline-today {
+  padding: 12px;
+  background-color: rgba(208, 224, 60, 0.4);
+  border-radius: 25px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+@keyframes chattingFaidin {
+  from {
+    transform: translateX(-600px) translateY(-600px);
+  }
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.chatting-row {
+  display: flex;
+  margin-bottom: 25px;
+  animation: chattingFaidin 2s ease-in-out forwards;
+}
+
+@keyframes imgComing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chat-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: imgComing 1s linear forwards infinite;
+}
+
+.chat-contact {
+  display: flex;
+}
+
+.chatting__avatar {
+  font-size: 20px;
+}
+
+.chat-info > img {
+  margin: 5px;
+  width: 280px;
+  border-radius: 5px;
+}
+
+.chatting__time,
+.chatting__time--own {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.chatting-img--own {
+  margin: 5px;
+}
+
+@keyframes fastDisappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chatting-row--own {
+  opacity: 0;
+  animation: fastDisappear 0.5s 3s linear forwards;
+}
+
+.chatting-row--own,
+.chat-info--own {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.chatting-row__content--own {
+  justify-content: flex-end;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.chatting__content {
+  margin: 5px;
+  color: var(--green);
+}
+
+/* reply*/
+
+.reply {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 6px 15px;
+  font-size: 22px;
+}
+
+.reply__column:first-child {
+  width: 10%;
+}
+
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply i {
+  color: #3b1261;
+  font-size: 20px;
+}
+
+.reply input {
+  padding: 5px;
+  width: 300px;
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  transition: transform 0.3s linear;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s linear;
+}
+
+@keyframes leftchatbox {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(0) translateY(-100px);
+  }
+}
+
+.reply input:focus {
+  width: 85vw;
+  animation: leftchatbox 0.3s ease-in-out forwards;
+}
+
+.reply:focus-within {
+  transform: translateY(90px);
+}

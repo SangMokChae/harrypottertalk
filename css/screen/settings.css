@@ -1,0 +1,26 @@
+.settings-setting {
+  font-size: 25px;
+  border-bottom: 1px solid var(--green);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-setting:last-child {
+  margin-bottom: 100px;
+}
+
+.settings-setting__column {
+  margin: 10px 0;
+  text-align-last: center;
+}
+
+.settings-setting__column i {
+  margin-right: 20px;
+}
+
+.settings-setting__column-sidetext {
+  font-size: 16px;
+  opacity: 0.7;
+}

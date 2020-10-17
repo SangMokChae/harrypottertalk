@@ -1,0 +1,184 @@
+.nonimpact {
+  animation: none;
+}
+
+#point__box {
+  width: 450px 100%;
+  height: 280px;
+  border-left: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+  display: flex;
+  justify-content: space-around;
+}
+
+#point__box div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-self: flex-end;
+  transform: rotate(45deg) skew(-20deg, -5deg);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  position: relative;
+}
+
+#point__box > div > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skew(0, 0);
+}
+
+.gryffindor {
+  background-color: #b9151c;
+}
+
+.hufflepuff {
+  background-color: #f6e70e;
+}
+
+.ravenclaw {
+  background-color: #171846;
+}
+
+.slytherin {
+  background-color: #03461b;
+}
+
+.point2 {
+  opacity: 0.5;
+}
+
+.point3 {
+  opacity: 0.7;
+}
+
+#point__box > div:hover {
+  transform: rotate(45deg) skew(-15deg, -15deg) translate(0, 0);
+}
+
+#point__box > .gryffindor:hover > .point2 {
+  transform: translate(-55px, -55px);
+}
+
+#point__box > .gryffindor:hover > .point3 {
+  transform: translate(-110px, -110px);
+}
+
+#point__box > .gryffindor:hover > .point4 {
+  transform: translate(-165px, -165px);
+}
+/* hufflepuff */
+
+#point__box > .hufflepuff:hover > .point2 {
+  transform: translate(-48px, -48px);
+}
+
+#point__box > .hufflepuff:hover > .point3 {
+  transform: translate(-96px, -96px);
+}
+
+#point__box > .hufflepuff:hover > .point4 {
+  transform: translate(-145px, -145px);
+}
+/* ravenclaw */
+#point__box > .ravenclaw:hover > .point2 {
+  transform: translate(-63px, -63px);
+}
+
+#point__box > .ravenclaw:hover > .point3 {
+  transform: translate(-126px, -126px);
+}
+
+#point__box > .ravenclaw:hover > .point4 {
+  transform: translate(-190px, -190px);
+}
+/* Slytherin */
+#point__box > .slytherin:hover > .point2 {
+  transform: translate(-60px, -60px);
+}
+
+#point__box > .slytherin:hover > .point3 {
+  transform: translate(-120px, -120px);
+}
+
+#point__box > .slytherin:hover > .point4 {
+  transform: translate(-180px, -180px);
+}
+
+.point4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.point4 span {
+  display: block;
+  transform: rotate(-45deg);
+  font-size: 22px;
+}
+
+.gryffindor > .point4 > span {
+  color: gold;
+}
+
+.hufflepuff > .point4 > span {
+  color: black;
+}
+
+.ravenclaw > .point4 > span {
+  color: #cd8032;
+}
+
+.slytherin > .point4 > span {
+  color: silver;
+}
+
+/* point__box-subtitle */
+
+.point__box-subtitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 26px;
+  color: turquoise;
+}
+
+.point__box-subtitle i {
+  color: gold;
+  margin: 0px 3px;
+}
+
+.ytb__video {
+  border-radius: 15px;
+  padding: 5px;
+  width: 100%;
+  height: 380px 100%;
+  margin-top: 15px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ytb__video__subtitle {
+  color: red;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@keyframes infoSparkle {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ytb__video__subtitle i {
+  margin: 0 10px;
+  animation: infoSparkle 0.5s linear infinite;
+}

@@ -1,0 +1,23 @@
+.setting-header {
+  display: flex;
+  align-items: center;
+  padding: 35px var(--horizontal-space);
+}
+
+.setting-header__column {
+  width: 33%;
+}
+
+.setting-header__column-link {
+  position: relative;
+}
+
+.setting-header__icon i {
+  color: var(--orange);
+}
+
+.setting-header__title {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
