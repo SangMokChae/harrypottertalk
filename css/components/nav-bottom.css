@@ -17,6 +17,10 @@
   color: #3b1261;
 }
 
+.nav__link:hover {
+  color: #cc0000;
+}
+
 @keyframes badge-faidIn {
   from {
     opacity: 0;
