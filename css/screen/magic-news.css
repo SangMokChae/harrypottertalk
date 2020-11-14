@@ -182,3 +182,25 @@
   margin: 0 10px;
   animation: infoSparkle 0.5s linear infinite;
 }
+
+.dormi_name {
+  display: inline;
+  margin-left: 40px;
+  color: gold;
+  border-radius: 5px;
+}
+
+.dormi_name:nth-child(2) {
+  margin-left: 90px;
+  color: black;
+}
+
+.dormi_name:nth-child(3) {
+  margin-left: 90px;
+  color: #cd8032;
+}
+
+.dormi_name:last-child {
+  margin-left: 100px;
+  color: silver;
+}

@@ -115,6 +115,11 @@
   color: var(--green);
 }
 
+/*scroll none*/
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* reply*/
 
 .reply {
